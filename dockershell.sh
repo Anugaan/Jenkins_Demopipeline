@@ -15,7 +15,7 @@ apt-get update
 >   exit
 docker run --name ubuntu ubuntu
 docker login -u anugaan
-Password:
+Password:77Tore53#
 docker push anugaan/myrepo:mytag
 
 
