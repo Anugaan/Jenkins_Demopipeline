@@ -1,6 +1,5 @@
 #! /bin/bash
 
-Docker build image using docker build cmd 
 
 docker login to docker-hub
 docker push the built docker image to registry 
