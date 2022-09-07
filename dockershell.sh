@@ -1,5 +1,7 @@
 #! /bin/bash
-
+git clone https://github.com/Anugaan/Jenkins_Demopipeline.git
+cd Jenkins_Demopipeline
+cat Dockerfile
 docker build .
 apt-get update
 >   apt-get install -y apache2 curl net-tools
