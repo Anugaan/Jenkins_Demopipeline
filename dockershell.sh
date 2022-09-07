@@ -1,3 +1,5 @@
+#! /bin/bash
+
 Docker build image using docker build cmd 
 
 docker login to docker-hub
