@@ -1,23 +1,13 @@
-#! /bin/bash
+#!/bin/bash
 git clone https://github.com/Anugaan/Jenkins_Demopipeline.git
 cd Jenkins_Demopipeline
 cat Dockerfile
-docker build .
-apt-get update
->   apt-get install -y apache2 curl net-tools
->   service apache2 status
->   echo 'Hello World' > /var/www/html/index.html
->   service apache2 start
->   netstat -plnt
->   curl localhost
->   ifconfig
->   curl 172.17.0.2
->   exit
-docker run --name ubuntu ubuntu
-docker login -u anugaan
-Password:77Tore53#
+docker build -t anugaan/myrepo:mytag .
+
 docker push anugaan/myrepo:mytag
+docker rm -f mycontianer
+docker rmi anugaan/myrepo:mytag
+docker run -itd   -p 8083:80  --name mycontainer anugaan/myrepo:mytag
+docker ps
 
-
- 
- 
+echo " job-subceed"
