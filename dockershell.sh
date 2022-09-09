@@ -1,7 +1,5 @@
 #!/bin/bash
-git clone https://github.com/Anugaan/Jenkins_Demopipeline.git
-cd Jenkins_Demopipeline
-cat Dockerfile
+
 docker build -t anugaan/myrepo:mytag .
 
 docker push anugaan/myrepo:mytag
