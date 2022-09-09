@@ -8,4 +8,4 @@ docker rmi anugaan/myrepo:mytag
 docker run -itd   -p 8083:80  --name mycontainer anugaan/myrepo:mytag
 docker ps
 
-echo " job-subceed"
+echo " Job complete "
