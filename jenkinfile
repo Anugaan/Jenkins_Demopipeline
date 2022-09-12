@@ -65,9 +65,9 @@ pipeline {
 			    git url: 'https://github.com/Anugaan/Jenkins_Demopipeline.git', branch: 'main',
                 credentialsId: 'git_cred'
                 // Change file permisson
-                sh "chmod +x -R script.sh"
+                sh "chmod +x -R shell.sh"
                 // Run shell script
-                sh "./script.sh"
+                sh "./shell.sh"
 
             }
 
