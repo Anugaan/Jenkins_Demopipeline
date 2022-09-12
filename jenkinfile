@@ -19,7 +19,7 @@ pipeline {
             steps { 
 
                 git url: 'https://github.com/Anugaan/Jenkins_Demopipeline.git', branch: 'main',
-                credentialsId: 'github_credentials'
+                credentialsId: 'git_cred'
 		
             }
 
@@ -63,7 +63,7 @@ pipeline {
 
                 sh "docker rmi $registry:$BUILD_NUMBER" 
 			    git url: 'https://github.com/Anugaan/Jenkins_Demopipeline.git', branch: 'main',
-                credentialsId: 'github_credentials'
+                credentialsId: 'git_cred'
                 // Change file permisson
                 sh "chmod +x -R script.sh"
                 // Run shell script
