@@ -2,7 +2,7 @@ pipeline {
 
     environment { 
 
-        registry = "myawspk/myrepo" 
+        registry = "anugaan/myrepo" 
 
         registryCredential = 'dockerhub_id' 
 
