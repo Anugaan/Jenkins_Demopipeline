@@ -4,7 +4,7 @@ pipeline {
 
         registry = "anugaan/myrepo" 
 
-        registryCredential = 'dockerhub_id' 
+        registryCredential = 'docker' 
 
         dockerImage = '' 
 
@@ -18,8 +18,8 @@ pipeline {
 
             steps { 
 
-                git url: 'https://github.com/mycloudazure/test_jenkins.git', branch: 'main',
-                credentialsId: 'github_creds'
+                git url: 'https://github.com/Anugaan/Jenkins_Demopipeline.git', branch: 'main',
+                credentialsId: 'github_credentials'
 		
             }
 
@@ -62,8 +62,8 @@ pipeline {
             steps { 
 
                 sh "docker rmi $registry:$BUILD_NUMBER" 
-			    git url: 'https://github.com/mycloudazure/test_jenkins.git', branch: 'main',
-                credentialsId: 'github_creds'
+			    git url: 'https://github.com/Anugaan/Jenkins_Demopipeline.git', branch: 'main',
+                credentialsId: 'github_credentials'
                 // Change file permisson
                 sh "chmod +x -R script.sh"
                 // Run shell script
